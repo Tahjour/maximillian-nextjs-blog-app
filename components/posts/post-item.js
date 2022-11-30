@@ -7,9 +7,9 @@ function PostItem(props) {
     const formatteddDate = new Date(date).toLocaleDateString('en-US', {
         day: 'numeric',
         month: 'long',
-        year: 'numeric'
+        year: 'numeric',
+        timeZone: 'UTC'
     });
-
     const imagePath = `/images/posts/${slug}/${imageName}`;
     const linkPath = `/posts/${slug}`;
 
